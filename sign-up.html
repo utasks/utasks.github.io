@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.5">
+        <title>Sign-Up</title>
+        <link rel="stylesheet" href="css/signUp.css">
+    </head>
+<body>
+    <div class="signup-page">
+        <div class="container">
+          <div class="header-area">
+            <a href="/">
+              <img class="logo" src="resources/utasks.svg"></img>
+            </a>
+            <ul class="links">
+              <li><a id="home" href="./">Home</a></li>
+            </ul>
+          </div>
+          <div class="container"> 
+            <div class="signup">
+               <div class="container">
+                    <h1>Sign-Up</h1>
+                    <div class="user-details">
+                        <input type="text" placeholder="First Name" id="firstName">
+                        <input type="text" placeholder="Last Name" id="secondName">
+                    </div>
+                    <input type="text" placeholder="User ID" id="userId">
+                    <span id="gender">Gender:</span>
+                    <div class="gender-wide-screen">
+                      <input type="radio" name="gender" value="male">
+                      <span id="male">Male</span>
+                      <input type="radio" name="gender" value="female">
+                      <span id="female">Female</span>
+                      <input type="radio" name="gender" value="other">	
+                      <span id="other">Other</span>
+                    </div>
+                    <div class="gender-small-screen">
+                      <select>
+                        <option value="none" selected hidden disabled>Please choose an option</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <input type="text" placeholder="Language" id="language">
+                    <textarea placeholder="Your Description" id="description"></textarea>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Address" id="address">
+                    <div class="user-details">
+                        <input type="text" placeholder="Country" id="country">
+                        <input type="text" placeholder="ZIP Code" id="zipCode"> 
+                    </div>
+                    <input type="password" placeholder="Password"><br>
+                    <a href="./sign-in.html" id="user">Already a user?</a>
+                    <button>Sign-Up</button>
+               </div>
+            </div>
+            <div class="presentation">
+                <div class="container">
+                    <img src="resources/user.png" alt="Tahir Abbas profile picture",width="300" height="300" >
+                    <h2>Hello,user!</h2>
+                    <p>We are happy to help you with your tasks!</p>
+                </div>
+            </div>  
+          </div>
+        </div>
+    </div>
+  
+</body>
+</html>

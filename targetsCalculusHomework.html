@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2021</title>
+
+	<link rel="stylesheet" href="css/targets.css" />
+</head>
+<body>
+	<div class="tasks-page">
+		<div class="container">
+
+			<div class="header-area">
+				<a href="/">
+					<img class="logo" src="resources/utasks.svg"></img>
+				</a>
+				<ul class="links">
+					<li><a id="home" href="./">Home</a></li>
+				</ul>
+			</div>
+
+			<section class="upper-part">
+				<header class="header">
+					<h1>Calculus Homework</h1>
+					<form id="new-target-form">
+						<input 
+							type="text" 
+							name="new-target-input" 
+							id="new-target-input" 
+							placeholder="What other step do you have to do to achieve your target?" />
+						<input 
+							type="submit"
+							id="new-task-submit" 
+							value="Add target" />
+					</form>
+				</header>
+			</section>
+			<section class="task-list">
+				<h2>The steps you have to take to achieve your target Calculus Homework</h2>
+				<div id="tasks">
+					<div class="task">
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox" name="checkbox-checked" unchecked />
+							</label>
+						</div>
+						<div class="content">
+							<input 
+								type="text" 
+								class="text" 
+								value="Rewatch the lecture"
+								readonly>
+						</div>
+						<div class="actions">
+							<button class="edit">Edit</button>
+							<button class="delete">Delete</button>
+						</div>
+					</div>
+				</div>
+				<div id="tasks">
+					<div class="task">
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox" name="checkbox-checked" unchecked />
+							</label>
+						</div>
+						<div class="content">
+							<input 
+								type="text" 
+								class="text" 
+								value="Attempt to solve the Grasple excercises"
+								readonly>
+						</div>
+						<div class="actions">
+							<button class="edit">Edit</button>
+							<button class="delete">Delete</button>
+						</div>
+					</div>
+				</div>
+				<div id="tasks">
+					<div class="task">
+						<div class="checkbox">
+							<label class="form-control">
+								<input type="checkbox" name="checkbox-checked" unchecked />
+							</label>
+						</div>
+						<div class="content">
+							<input 
+								type="text" 
+								class="text" 
+								value="Attempt to solve the book excercises"
+								readonly>
+						</div>
+						<div class="actions">
+							<button class="edit">Edit</button>
+							<button class="delete">Delete</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

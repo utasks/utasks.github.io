@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tasks</title>
+
+		<link rel="stylesheet" href="css/task.css" />
+	</head>
+<body>
+	<div class="tasks-page">
+		<div class="container">
+
+			<div class="header-area">
+				<a href="/">
+					<img class="logo" src="resources/utasks.svg"></img>
+				</a>
+				<ul class="links">
+					<li><a id="home" href="./">Home</a></li>
+				</ul>
+			</div>
+
+			<section class="upper-part">
+				<h1>Main Tasks</h1>
+				<form id="new-task-form">
+					<input 
+						type="text" 
+						name="new-task-input" 
+						id="new-task-input" 
+						placeholder="What do you have planned?" />
+				</form>
+				<form id="date">
+				<input 
+					type="date" 
+					name="new-task-date" 
+					id="new-task-date" />
+				<select id="folder"> 
+					<option value="none" selected disabled hidden>Please choose a folder</option>
+					<option value="calculus">Calculus</option>
+					<option value="ads">ADS</option>
+					<option value="web-and-database-technology">Web and Database Technology</option>
+				</select>
+				</form>
+				<form id="addTask">
+					<input 
+						type="submit"
+						id="new-task-submit" 
+						value="Add task" />
+				</form>
+			</section>
+		
+			<section class="task-list">
+			<h2>Task Folder</h2>
+			<div id="tasks">
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Calculus Homework"
+							readonly>
+					</div>
+						<div class="date">
+							<label>20/01/2023</label>
+						</div>
+						<div class="folder">
+							<label>Calculus</label>
+						</div>
+					<div class="actions">
+						<ul class="links">
+							<a id="seetargets" href="./targetsCalculusHomework.html">Targets</a>
+							</ul>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+			<div id="tasks">
+				<div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Web Assignment"
+							readonly>
+					</div>
+					<div class="date">
+						<label>16/01/2023</label>
+					</div>
+					<div class="folder">
+						<label>Web and Database Technolody</label>
+					</div>
+					<div class="actions">
+						<ul class="links">
+							<a id="seetargets" href="./targetsWebAssignment.html">Targets</a>
+							</ul>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+			</section>
+
+		</div>
+	</div>
+
+</body>
+</html>

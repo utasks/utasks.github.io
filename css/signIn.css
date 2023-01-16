@@ -1,0 +1,186 @@
+/*Start Global Style*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background:#0e141d;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: sans-serif;
+    accent-color: #00FF85;
+}
+
+.signin-page {
+    position: relative
+}
+
+.signin-page .header-area {
+    display: flex;
+    padding: 25px 0 0;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.signin-page .header-area .logo {
+    margin-top: 10px;
+    font-size: 19px;
+    width: 100px;
+}
+
+.signin-page .header-area .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.signin-page .header-area .links li {
+    display: inline-block;
+    margin-left: 30px;
+    color: #5d5d5d;
+    cursor: pointer;
+}
+
+a[id="home"]{
+    border: 1px solid #00FF85;
+    border-radius: 20px;
+    padding: 10px 18px;
+    color: #0e141d;
+    font-weight: 600;
+    background-color: #00FF85;
+    text-decoration: none;
+    transition:0.2s all  ease-in-out;
+}
+
+a[id="home"]:hover{
+    background-color: transparent;
+    border: 1px solid #00FF85;
+    color: #00FF85;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    overflow:auto; 
+    
+}
+
+.signin ,.presentation{width: 50%; height: 100%;}
+
+/*Start Sign-In Style*/
+
+.signin{
+    float:left;
+    background-color: #17202e;
+    height: 80vh;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 100px;
+    scrollbar-color: #0e141d #000;
+    scrollbar-width: thin;
+    overflow-y: auto;
+}
+.signin h1{
+    margin-bottom: 40px;
+    display: flex;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+input[type="password"],
+input[id="userId"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: 500;
+    background-color: #0e141d;
+}
+
+.user{
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.1s all ease-in-out;
+}
+
+.forgot-password{
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.1s all ease-in-out;
+}
+.signin a:hover{color: #00FF85;}
+.signin button{
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #00FF85;
+    color: #17202e;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.18s all ease-in-out;
+}
+.signin button:hover{
+    width:97%;
+    font-size: 22px;
+    border-radius: 10px;
+    
+}
+.signin hr{
+    width: 30%;
+    display: inline-block
+}
+
+.signin p{
+    display: inline-block;
+    margin: 0px 10px 30px;
+}
+.signin ul{
+    list-style: none;
+    margin-bottom:40px;  
+}
+.signin ul li{
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.signin ul li:hover{opacity: 0.6}
+.signin ul li:last-child{margin-right: 0}
+.signin .copyright{
+    display: inline-block;
+    float: none;
+}
+
+/*Start Presentation Style*/
+.presentation{
+    float: right;
+    background-image: linear-gradient(105deg, #17202e 10%, #00FF85 95%);
+    height: 80vh;
+    color:#fff;
+    border-radius:  0 10px 10px  0;
+    text-align: center;
+    padding: 40px 0;
+    -ms-overflow-style: none;
+}
+.presentation h2{
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px
+}
+.presentation p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}

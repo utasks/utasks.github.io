@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2021</title>
+
+	<link rel="stylesheet" href="css/targets.css" />
+</head>
+<body>
+<div class="tasks-page">
+	<div class="container">
+
+		<div class="header-area">
+			<a href="/">
+				<img class="logo" src="resources/utasks.svg"></img>
+			</a>
+			<ul class="links">
+				<li><a id="home" href="./">Home</a></li>
+			</ul>
+		</div>
+
+		<div class="upper-part">
+			<header class="header">
+				<h1>Web Assignment</h1>
+				<form id="new-target-form">
+					<input 
+						type="text" 
+						name="new-target-input" 
+						id="new-target-input" 
+						placeholder="What other step do you have to do to achieve your task?" />
+					<input 
+						type="submit"
+						id="new-task-submit" 
+						value="Add target" />
+				</form>
+			</header>
+		</section>
+
+		<section class="task-list">
+			<h2>The steps you have to take to achieve your task Web Assignment:</h2>
+			<div id="tasks">
+				<div class="task">
+					<div class="checkbox">
+						<label class="form-control">
+							<input type="checkbox" name="checkbox-unchecked" unchecked />
+						</label>
+					</div>
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Install the necessary apps"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+			<div id="tasks">
+				<div class="task">
+					<div class="checkbox">
+						<label class="form-control">
+							<input type="checkbox" name="checkbox-unchecked" unchecked />
+						</label>
+					</div>
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Choose the project idea you want to implement"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+			<div id="tasks">
+				<div class="task">
+					<div class="checkbox">
+						<label class="form-control">
+							<input type="checkbox" name="checkbox-unchecked" unchecked />
+						</label>
+					</div>
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Read the first 4 requirements carefully"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+			<div id="tasks">
+				<div class="task">
+					<div class="checkbox">
+						<label class="form-control">
+							<input type="checkbox" name="checkbox-unchecked" unchecked />
+						</label>
+					</div>
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Implement the HTML and CSS code"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+</body>
+</html>
